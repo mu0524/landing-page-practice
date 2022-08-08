@@ -42,6 +42,41 @@ a:hover{
     opacity: 1;
 }
 
+.third-img {
+    height: 220px;
+    background-color: #00A9A9;
+}
+
+.third-content {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+    padding: 2rem;
+    letter-spacing: 0.1em;
+    line-height: 220%;
+}
+
+
+.third {
+    position: absolute;
+    top: 76rem;
+    right: .5rem;
+    width: 95vw;
+    height: 65vh;
+}
+
+.product-hover {
+    position: absolute;
+    top: 324px;
+    width: 91.5%;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 100%;
+    text-align: center;
+    opacity: 0;
+    padding: 10px 0;
+    transition: .8s;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .carousel-caption {
@@ -51,7 +86,7 @@ a:hover{
     .banner-title {
         font-family: 'playfair-display','Noto Serif TC';
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.2em;
     }
     
@@ -60,6 +95,41 @@ a:hover{
         font-size: 1.5rem;
         font-weight: 500;
         letter-spacing: 0.15em;
+    }
+
+    .third-img {
+        height: 235px;
+        background-color: #00A9A9;
+    }
+
+    .third-content {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+        padding: 2rem;
+        letter-spacing: 0.1em;
+        line-height: 220%;
+    }
+
+
+    .third {
+        position: absolute;
+        top: 70rem;
+        right: 1rem;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .product-hover {
+        position: absolute;
+        top: 190px;
+        width: 87%;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        line-height: 100%;
+        text-align: center;
+        opacity: 0;
+        padding: 10px 0;
+        transition: .8s;
     }
  }
 
@@ -72,7 +142,7 @@ a:hover{
     .banner-title {
         font-family: 'playfair-display','Noto Serif TC';
         font-size: 2.5rem;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.2em;
     }
     
@@ -82,29 +152,98 @@ a:hover{
         font-weight: 500;
         letter-spacing: 0.15em;
     }
+
+    .third-img {
+        height: 290px;
+        background-color: #00A9A9;
+    }
+
+    .third-content {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+        padding: 5rem;
+        letter-spacing: 0.1em;
+        line-height: 220%;
+    }
+
+
+    .third {
+        position: absolute;
+        top: 100rem;
+        right: 2rem;
+        width: 60vw;
+        height: 55vh;
+    }
+
+    .product-hover {
+        position: absolute;
+        top: 202px;
+        width: 87.5%;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        line-height: 100%;
+        text-align: center;
+        opacity: 0;
+        padding: 10px 0;
+        transition: .8s;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .carousel-caption {
         bottom: 15rem;
     }
 
     .banner-title {
-        font-family: 'playfair-display','Noto Serif TC';
+        font-family: 'playfair-display', 'Noto Serif TC';
         font-size: 2.5rem;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.2em;
     }
-    
+
     .banner-title-eng {
-        font-family: 'playfair-display','Noto Serif TC';
+        font-family: 'playfair-display', 'Noto Serif TC';
         font-size: 1.8rem;
         font-weight: 500;
         letter-spacing: 0.15em;
     }
-}
 
+    .third-img {
+        height: 446.5px;
+        background-color: #00A9A9;
+    }
+
+    .third-content {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+        padding: 5rem;
+        letter-spacing: 0.1em;
+        line-height: 220%;
+    }
+
+
+    .third {
+        position: absolute;
+        top: 100rem;
+        right: 2rem;
+        width: 60vw;
+        height: 55vh;
+    }
+
+    .product-hover {
+        position: absolute;
+        top: 202px;
+        width: 87.5%;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        line-height: 100%;
+        text-align: center;
+        opacity: 0;
+        padding: 10px 0;
+        transition: .8s;
+    }
+}
 
 
 .btn {
@@ -134,6 +273,65 @@ a:hover{
     border: 8px solid #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
+
+.section-fourth {
+    padding: 10rem 0;
+    background: rgba(0, 149, 175, 0.03);
+}
+
+
+#product-item:hover .product-hover {
+    opacity: 1;
+}
+
+.product-tab-bg {
+    background-color: #00A9A9;
+    background-image: url(../img/product.png);
+}
+
+.product-tab-link {
+    color: #ffffff;
+}
+
+.product-tab-link:hover {
+    text-decoration: double;
+    color: #ffffff80;
+}
+
+.product-tab-link-active {
+    border-bottom: 3px double #ffffff;
+}
+
+.section-fifth {
+    padding: 5rem 0;
+    background-image: url(../img/video.jpg);
+}
+
+.pressure-content {
+    line-height: 220%;
+}
+
+.section-sixth {
+    padding: 5rem 0;
+}
+
+
+.contact {
+    background-color: #00A9A9;
+}
+
+.store {
+    background-color: #0095AF;;
+}
+
+.contact-link {
+    color: #ffffffff;
+    font-family: 'playfair-display','Noto Serif TC';
+    font-size: 34px;
+    line-height: 50px;
+    letter-spacing: 0.2em;
+}
+
 
 .footer-btn {
     display: inline-block;
