@@ -42,26 +42,46 @@ a:hover {
     opacity: 1;
 }
 
-.third-img {
-    height: 220px;
-    background-color: #00A9A9;
+.section-third {
+    position: relative;
+    background-image: url(../img/about-bg-2.png);
 }
+
+.third-img-deco1 {
+    height: 100%;
+}
+
+.third-img-deco2 {
+    height: 100%;
+    padding-right: 5px;
+}
+
+.third-img-deco3 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #B2E5E5;
+}
+
+.third {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    width: 90%;
+    height: 200px;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.third-bg { height: 180px;
+}
+
 
 .third-content {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
-    padding: 2rem;
     letter-spacing: 0.1em;
     line-height: 220%;
-}
-
-
-.third {
-    position: absolute;
-    top: 76rem;
-    right: .5rem;
-    width: 95vw;
-    height: 65vh;
 }
 
 .product-hover {
@@ -97,26 +117,17 @@ a:hover {
         letter-spacing: 0.15em;
     }
 
-    .third-img {
-        height: 235px;
-        background-color: #00A9A9;
+    .third-bg {
+        height: 300px;
     }
-
-    .third-content {
-        background-color: #FFFFFF;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
-        padding: 2rem;
-        letter-spacing: 0.1em;
-        line-height: 220%;
-    }
-
 
     .third {
         position: absolute;
-        top: 70rem;
-        right: 1rem;
-        width: 80vw;
-        height: 30vh;
+        top: 25%;
+        right: 5%;
+        width: 90%;
+        height: auto;
+        padding: 2.5rem;
     }
 
     .product-hover {
@@ -153,27 +164,19 @@ a:hover {
         letter-spacing: 0.15em;
     }
 
-    .third-img {
-        height: 290px;
-        background-color: #00A9A9;
+    .third-bg {
+        height: 300px;
     }
-
-    .third-content {
-        background-color: #FFFFFF;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
-        padding: 5rem;
-        letter-spacing: 0.1em;
-        line-height: 220%;
-    }
-
 
     .third {
         position: absolute;
-        top: 100rem;
-        right: 2rem;
-        width: 60vw;
-        height: 55vh;
+        top: 25%;
+        right: 5%;
+        width: 70%;
+        height: auto;
+        padding: 3rem;
     }
+
 
     .product-hover {
         position: absolute;
@@ -209,27 +212,19 @@ a:hover {
         letter-spacing: 0.15em;
     }
 
-    .third-img {
-        height: 446.5px;
-        background-color: #00A9A9;
-    }
-
-    .third-content {
-        background-color: #FFFFFF;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
-        padding: 5rem;
-        letter-spacing: 0.1em;
-        line-height: 220%;
-    }
-
-
     .third {
         position: absolute;
-        top: 100rem;
-        right: 2rem;
-        width: 60vw;
-        height: 55vh;
+        top: 25%;
+        right: 5%;
+        width: 50%;
+        height: auto;
+        padding: 5rem;
     }
+    
+    .third-bg {
+        height: 465px;
+    }
+
 
     .product-hover {
         position: absolute;
@@ -393,4 +388,17 @@ a:hover {
     padding: 10px;
     padding-top: 25px;
     vertical-align: middle;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+::selection {
+	background: #00A9A9;
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #00A9A9;
+	color: #ffffff;
 }
