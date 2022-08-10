@@ -14,13 +14,14 @@
     <!-- js -->
     <script src="./assets/js/jquery-3.6.0.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/js.js"></script>
 
 
     <!-- icons -->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="top">
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg bg-white fixed-top pr-0">
@@ -161,102 +162,389 @@
             </div>
         </section>
 
+        <!-- 產品介紹 -->
         <section class="section-fourth">
             <div class="container">
                 <div class="row justify-content-end mb-5 mx-4">
                     <h3><span class="about-titile">產品介紹 / </span><span class="about-titile text-black-50">Product</span></h3>
                 </div>
                 <div class="row justify-content-around">
-                    <div class="col-lg-2 col-md-12 col-12 product-tab-bg">
-                        <div class="row p-4 text-center text-white">
-                            <div class="col-lg-12 col-md-3 col-6 my-3"><a class="product-tab-link" href="#">AI智能電動床</a></div>
-                            <div class="col-lg-12 col-md-3 col-6 my-3"><a class="product-tab-link product-tab-link-active" href="#">床墊</a></div>
-                            <div class="col-lg-12 col-md-3 col-6 my-3"><a class="product-tab-link" href="#">臥室家具</a></div>
-                            <div class="col-lg-12 col-md-3 col-6 my-3"><a class="product-tab-link" href="#">寢具床包</a></div>
+                    <div class="col-lg-2 product-tab-bg">
+                        <div class="nav flex-column nav-pills p-4 text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="product-tab-link" id="v-pills-home-tab" data-toggle="pill" href="#AI" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">AI智能電動床</a>
+                            <a class="product-tab-link active" id="v-pills-profile-tab" data-toggle="pill" href="#Mattress"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">床墊</a>
+                            <a class="product-tab-link" id="v-pills-messages-tab" data-toggle="pill" href="#bedroom" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">臥室家具</a>
+                            <a class="product-tab-link" id="v-pills-settings-tab" data-toggle="pill" href="#bedding" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">寢具床包</a>
                         </div>
                     </div>
+            
                     <div class="col-lg-9 col-md-12 col-12">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-12 p-3">
-                                <!-- product item -->
-                                <div>
-                                    <div id="product-item">
-                                        <img class="w-100" src="./assets/img/product-img1.png" alt="" />
-                                        <div class="product-hover"><a class="text-white" href="#">加入購物車</a></div>
+                        <div id="v-pills-tabContent" class="tab-content">
+                            <!-- 床墊 預設 -->
+                            <div id="Mattress" class="tab-pane fade show active" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img1.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>日式和風紐西蘭松木雙層實木床台</p>
+                                                <span class="text-danger">$50,625</span><span
+                                                    class="ml-3 text-muted"><s>$67,500</s></span>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="mt-2 text-justify">
-                                        <p>日式和風紐西蘭松木雙層實木床台</p>
-                                        <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img2.jpg" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+                                            <div class="mt-2 text-justify">
+                                                <p>乳膠獨立筒床墊-凱薩特式版</p>
+                                                <span class="text-danger">$27,285</span><span
+                                                    class="ml-3 text-muted"><s>$42,800</s></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img3.jpg" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+                                            <div class="mt-2 text-justify">
+                                                <p>歐式貓抓皮床架(不含床墊)</p>
+                                                <span class="text-danger">$43,125</span><span
+                                                    class="ml-3 text-muted"><s>$57,500</s></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+                                            <div class="mt-2 text-justify">
+                                                <p>簡約北歐風紐西蘭松木單人實木床台</p>
+                                                <span class="text-danger">$22,500</span><span
+                                                    class="ml-3 text-muted"><s>$30,000</s></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img4.jpg" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+                                            <div class="mt-2 text-justify">
+                                                <p>天然乳膠枕</p>
+                                                <span class="text-danger">$1,280</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img5.jpg" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+                                            <div class="mt-2 text-justify">
+                                                <p>乳膠獨立筒床墊-凱薩特式版</p>
+                                                <span class="text-danger">$27,285</span><span
+                                                    class="ml-3 text-muted"><s>$42,800</s></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-12 p-3">
-                                <!-- product item -->
-                                <div>
-                                    <div id="product-item">
-                                        <img class="w-100" src="./assets/img/product-img2.jpg" alt="" />
-                                        <div class="product-hover"><a class="text-white" href="#">加入購物車</a></div>
+            
+                            <!-- AI -->
+                            <div id="AI" class="tab-pane fade" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mt-2 text-justify">
-                                        <p>乳膠獨立筒床墊-凱薩特式版</p>
-                                        <span class="text-danger">$27,285</span><span class="ml-3 text-muted"><s>$42,800</s></span>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-12 p-3">
-                                <!-- product item -->
-                                <div>
-                                    <div id="product-item">
-                                        <img class="w-100" src="./assets/img/product-img3.jpg" alt="" />
-                                        <div class="product-hover"><a class="text-white" href="#">加入購物車</a></div>
+            
+                            <!-- 臥室 -->
+                            <div id="bedroom" class="tab-pane fade" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mt-2 text-justify">
-                                        <p>歐式貓抓皮床架(不含床墊)</p>
-                                        <span class="text-danger">$43,125</span><span class="ml-3 text-muted"><s>$57,500</s></span>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-12 p-3">
-                                <!-- product item -->
-                                <div>
-                                    <div id="product-item">
-                                        <img class="w-100" src="./assets/img/product-img.png" alt="" />
-                                        <div class="product-hover"><a class="text-white" href="#">加入購物車</a></div>
+            
+                            <!-- 寢具 -->
+                            <div id="bedding" class="tab-pane fade" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mt-2 text-justify">
-                                        <p>簡約北歐風紐西蘭松木單人實木床台</p>
-                                        <span class="text-danger">$22,500</span><span class="ml-3 text-muted"><s>$30,000</s></span>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-12 p-3">
-                                <!-- product item -->
-                                <div>
-                                    <div id="product-item">
-                                        <img class="w-100" src="./assets/img/product-img4.jpg" alt="" />
-                                        <div class="product-hover"><a class="text-white" href="#">加入購物車</a></div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mt-2 text-justify">
-                                        <p>天然乳膠枕</p>
-                                        <span class="text-danger">$1,280</span>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-12 p-3">
-                                <!-- product item -->
-                                <div>
-                                    <div id="product-item">
-                                        <img class="w-100" src="./assets/img/product-img5.jpg" alt="" />
-                                        <div class="product-hover"><a class="text-white" href="#">加入購物車</a></div>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mt-2 text-justify">
-                                        <p>乳膠獨立筒床墊-凱薩特式版</p>
-                                        <span class="text-danger">$27,285</span><span class="ml-3 text-muted"><s>$42,800</s></span>
+                                    <div class="col-lg-4 col-md-4 col-12 p-3">
+                                        <!-- product item -->
+                                        <div>
+                                            <div id="product-item">
+                                                <img class="w-100" src="./assets/img/product-img.png" alt="" />
+                                                <div class="product-hover"><a class="product-hover-link" href="#">加入購物車</a></div>
+                                            </div>
+            
+                                            <div class="mt-2 text-justify">
+                                                <p>敬請期待</p>
+                                                <!-- <span class="text-danger">$50,625</span><span class="ml-3 text-muted"><s>$67,500</s></span> -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+            
                     </div>
                 </div>
             </div>
@@ -397,7 +685,18 @@
                 <p class="mb-0 text-white">Copyright © 2022 智能臥室科技股份有限公司 - All Right Reserved.Designed by <a class="footer-link" href="https://www.bondlink.com.tw/" target="_blank">BONDLINK</a></p>
         </div>
     </footer>
-
+    <div class="float-item1">
+        <a class="float-item-link link-bg1" href="#">免費<br>試躺</a>
+    </div>
+    <div class="float-item2">
+        <a class="float-item-link link-bg2" href="#">預約<br>體驗</a>
+    </div>
+    <div class="float-item3">
+        <a class="float-item-link link-bg3" href="#">粉絲<br>專業</a>
+    </div>
+    <div id="footer-scroll-to-top" class="float-item4" style="display: none;">
+        <a id="scroll-to-top" class="footer-scroll-to-top text-center" href="#top"><i class="fas fa-long-arrow-alt-up"></i><br>TOP</a>
+    </div>
 
 </body>
 
