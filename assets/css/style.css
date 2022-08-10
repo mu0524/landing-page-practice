@@ -355,11 +355,18 @@ a:hover {
     padding: 10px;
     padding-top: 25px;
     vertical-align: middle;
+    transition: .8s;
+}
+
+.footer-btn:hover {
+    color: #E0F5F5;
+    background: #00A9A9;
 }
 
 .footer-link {
     color: rgba(255, 255, 255, 0.5);
 }
+
 
 .float-item-link {
     position: relative;
@@ -373,16 +380,35 @@ a:hover {
     color: #ffffff;
 }
 
+.float-item-link:hover {
+    color: #ffffff;
+}
+
 .link-bg1 {
     background-color: #33AABF;
+    transition: .8s;
+}
+
+.link-bg1:hover {
+    background-color: rgb(51,170,191,.5);
 }
 
 .link-bg2 {
     background-color: #33BABA;
+    transition: .8s;
+}
+
+.link-bg2:hover {
+    background-color: rgb(51,186,186,.5);
 }
 
 .link-bg3 {
     background-color: #4267B2;
+    transition: .8s;
+}
+
+.link-bg3:hover {
+    background-color: rgb(66,103,178,.5);
 }
 
 .float-item1 {
